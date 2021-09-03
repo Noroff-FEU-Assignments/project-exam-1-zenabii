@@ -91,6 +91,7 @@
 }
 
 .nav .menu-nav {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +141,7 @@ a {
 
 ul {
   list-style: none;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 header {
