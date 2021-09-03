@@ -6,3 +6,7 @@ $solid-green: #e9e6e2;
 $hot-pink: #efd3d3;
 $coral: #dfb794;
 $light-blue: #d5d6db;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}

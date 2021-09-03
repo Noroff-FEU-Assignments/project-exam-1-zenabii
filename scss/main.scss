@@ -1,5 +1,6 @@
 @import "config";
 @import "home";
+@import "menu";
 
 body {
   height: 100vh;
@@ -16,6 +17,12 @@ h3 {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  font-size: 2rem;
 }
 
 header {
@@ -40,4 +47,5 @@ footer {
   text-align: center;
   background-color: $main-grey;
   color: #fff;
+  height: 200px;
 }
