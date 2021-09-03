@@ -82,5 +82,19 @@
     &.open {
       transform: translateY(0);
     }
+
+    &__item.active > a {
+      color: $font-green;
+    }
+
+    &__link {
+      list-style: none;
+      font-size: 3rem;
+      @include transition-ease;
+
+      &:hover {
+        color: $main-green;
+      }
+    }
   }
 }

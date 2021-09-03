@@ -5,6 +5,7 @@
 body {
   height: 100vh;
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -20,16 +21,12 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-  font-size: 3rem;
-}
-
 header {
   position: fixed;
   z-index: 2;
   width: 100%;
   padding: 1rem;
+  background-color: #fff;
 }
 
 main {
@@ -38,12 +35,13 @@ main {
 }
 
 .main_logo {
+  display: inherit;
   width: 200px;
+  margin: 0 auto;
 }
 
 footer {
   font-size: 2rem;
-  position: fixed;
   text-align: center;
   background-color: $main-grey;
   color: #fff;
