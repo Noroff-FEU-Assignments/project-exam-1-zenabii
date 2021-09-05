@@ -1,6 +1,7 @@
 @import "config";
 @import "home";
 @import "menu";
+@import "about";
 
 body {
   height: 100vh;
@@ -41,6 +42,21 @@ h4 {
 
   &.footer_title {
     font-size: 4rem;
+  }
+
+  &.about_marie {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    content: open-quote;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 30px;
   }
 }
 
