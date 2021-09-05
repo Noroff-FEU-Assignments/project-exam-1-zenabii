@@ -5,20 +5,97 @@
 body {
   height: 100vh;
   font-family: "Raleway", sans-serif;
+  font-weight: 300;
   margin: 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   text-transform: uppercase;
+  font-size: 2.5rem;
+
+  &.topic_name {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  &#latest {
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  &#latest_title {
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+
+  &.sign_up {
+    font-size: 4.5rem;
+    margin: 0 10px;
+    color: $font-green;
+  }
+
+  &.footer_title {
+    font-size: 4rem;
+  }
 }
 
 a {
   text-decoration: none;
   color: inherit;
+
+  &.hashtag_link {
+    text-decoration: underline;
+    color: $hashtag-link;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-left: 12px;
+    cursor: pointer;
+
+    &:hover {
+      filter: invert(1);
+    }
+  }
+
+  &.button_text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #fff;
+
+    &:hover {
+      color: $main-grey;
+    }
+  }
+}
+
+.arrow {
+  width: 50px;
+  padding-left: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    filter: invert(1);
+  }
+}
+
+.hashtags {
+  margin: 30px 0 10px 0;
+}
+
+.lead_paragraph {
+  padding-top: 30px;
+  width: 95%;
+  margin: 0 auto;
+
+  &.news {
+    color: $font-green;
+    width: 90%;
+  }
 }
 
 header {
@@ -45,5 +122,42 @@ footer {
   text-align: center;
   background-color: $main-grey;
   color: #fff;
-  height: 200px;
+  padding-bottom: 20px;
+}
+
+.footer_nav {
+  list-style: none;
+  margin: 30px 0;
+  font-size: 1.5rem;
+}
+
+.footer_list {
+  padding: 20px 0px;
+}
+
+.copyright {
+  background-color: $hot-pink;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.copyright p {
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.button {
+  background-color: $main-grey;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  width: 110px;
+  padding: 12px;
+  border-radius: 30px 0px 30px 0px;
+
+  &:hover {
+    background-color: $light-green;
+    box-shadow: inset 0px 0px 0px 2px $main-grey;
+  }
 }

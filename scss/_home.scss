@@ -1,13 +1,67 @@
 .home {
-  height: 100%;
-  padding-top: 20vh;
+  padding-top: 8vh;
   overflow: hidden;
   align-items: center;
 }
 
 .latest_image {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   object-fit: cover;
   overflow: hidden;
+}
+
+.hightlight_img {
+  height: 80vh;
+}
+
+.highlights {
+  margin-top: 70px;
+}
+
+.latest_posts {
+  background-color: $light-green;
+  display: block;
+  margin: 40px 0 0 0;
+  padding: 40px 0px;
+}
+
+.slider_image {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.newsletter {
+  background-color: $main-green;
+  padding: 50px 0;
+}
+
+#newsletter_signup {
+  display: flex;
+  margin: 50px 0 200px;
+}
+
+#email {
+  width: 85%;
+  margin: 0 auto;
+  height: 75px;
+  border: none;
+}
+
+::placeholder {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.portrait {
+  margin-top: -200px;
 }

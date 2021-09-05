@@ -1,6 +1,5 @@
 .home {
-  height: 100%;
-  padding-top: 20vh;
+  padding-top: 8vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -9,16 +8,96 @@
 
 .latest_image {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
 }
 
+.hightlight_img {
+  height: 80vh;
+}
+
+.highlights {
+  margin-top: 70px;
+}
+
+.latest_posts {
+  background-color: #f8f8f2;
+  display: block;
+  margin: 40px 0 0 0;
+  padding: 40px 0px;
+}
+
+.slider_image {
+  width: 300px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.newsletter {
+  background-color: #f0f2ec;
+  padding: 50px 0;
+}
+
+#newsletter_signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0 200px;
+}
+
+#email {
+  width: 85%;
+  margin: 0 auto;
+  height: 75px;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+::-ms-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+::placeholder {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.portrait {
+  margin-top: -200px;
+}
+
 .menu-btn {
   position: absolute;
   z-index: 1;
-  right: 4rem;
+  right: 3rem;
   top: 2rem;
   height: 20px;
   width: 28px;
@@ -133,26 +212,120 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #dcdfd1;
+  color: #f0f2ec;
 }
 
 body {
   height: 100vh;
   font-family: "Raleway", sans-serif;
+  font-weight: 300;
   margin: 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+h1.topic_name,
+h2.topic_name,
+h3.topic_name,
+h4.topic_name {
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1#latest,
+h2#latest,
+h3#latest,
+h4#latest {
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+
+h1#latest_title,
+h2#latest_title,
+h3#latest_title,
+h4#latest_title {
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+h1.sign_up,
+h2.sign_up,
+h3.sign_up,
+h4.sign_up {
+  font-size: 4.5rem;
+  margin: 0 10px;
+  color: #959c7d;
+}
+
+h1.footer_title,
+h2.footer_title,
+h3.footer_title,
+h4.footer_title {
+  font-size: 4rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a.hashtag_link {
+  text-decoration: underline;
+  color: #cca490;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+a.hashtag_link:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+a.button_text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+a.button_text:hover {
+  color: #64645f;
+}
+
+.arrow {
+  width: 50px;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.hashtags {
+  margin: 30px 0 10px 0;
+}
+
+.lead_paragraph {
+  padding-top: 30px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.lead_paragraph.news {
+  color: #959c7d;
+  width: 90%;
 }
 
 header {
@@ -179,6 +352,52 @@ footer {
   text-align: center;
   background-color: #64645f;
   color: #fff;
-  height: 200px;
+  padding-bottom: 20px;
+}
+
+.footer_nav {
+  list-style: none;
+  margin: 30px 0;
+  font-size: 1.5rem;
+}
+
+.footer_list {
+  padding: 20px 0px;
+}
+
+.copyright {
+  background-color: #efd3d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.copyright p {
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.button {
+  background-color: #64645f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px auto;
+  width: 110px;
+  padding: 12px;
+  border-radius: 30px 0px 30px 0px;
+}
+
+.button:hover {
+  background-color: #f8f8f2;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #64645f;
+          box-shadow: inset 0px 0px 0px 2px #64645f;
 }
 /*# sourceMappingURL=main.css.map */
