@@ -1,0 +1,64 @@
+.contact {
+  padding-top: 15vh;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  background-color: $contact-pink;
+  height: 90vw;
+}
+
+.bookings {
+  text-align: center;
+  width: 90%;
+}
+
+.bookings p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact_email {
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.contact_form {
+  display: flex;
+  margin: 50px 0px;
+  flex-direction: column;
+  background-image: url(../dist/img/background_shape.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  margin: 0 auto;
+}
+
+.contact_form h2 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#contactForm {
+  margin: 70px auto 0px;
+}
+
+#formInput {
+  display: flex;
+  margin: 10px 0;
+  width: 340px;
+  height: 40px;
+}
+
+::placeholder {
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+h4.sign_up {
+  color: $main-grey;
+}

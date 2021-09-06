@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Contact us at Project Marie</title>
+</head>
+<body>
+    <header class="alternative">
+        <img class="main_logo" src="img/logo.svg" alt="Marie Logo">
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="index.html" class="menu-nav__link">Home</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="about.html" class="menu-nav__link">About</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="blog.html" class="menu-nav__link">Blog</a>
+                </li>
+                <li class="menu-nav__item active">
+                    <a href="contact.html" class="menu-nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<main>
+<section class="contact">
+    <div class="bookings">
+        <h1>bookings & partnerships</h1>
+        <p>For booking inquiries & partnerships, please contact Jane Doe or John Doe:</p>
+        <p class="contact_email">jane@mariae.com / John@mariae.com</p>
+    </div>
+</section>
+
+<section class="contact_form">
+    <h2>got questions? ask me!</h2>
+    <form id="contactForm">
+        <label id="contact_input">
+            <input name="name" id=formInput placeholder="Name">
+        </label>
+        <label id="contact_input">
+            <input email="email" id=formInput placeholder="Email">
+        </label>
+        <label id="contact_input">
+            <input subject="subject" id=formInput placeholder="Subject">
+        </label>
+        <label id="contact_input">
+                <textarea name="message" id="formInput" placeholder="Message"></textarea>
+        </label>
+    </form>
+    <a href="#" class="button button_text">read more</a>
+</section>
+
+<div class="newsletter_alternative">
+    <h4 class="sign_up_alternative">stay up to date</h4>
+    <p class="lead_paragraph alternative">Receive news, new posts, and all the new trends straight to your inbox.</p>
+    <label id="newsletter_signup">
+        <input email="email" id=email placeholder="Enter Email">
+    </label>
+</div>
+
+<footer>
+    <ul class="footer_list">
+        <li class="footer_nav">
+            <a href="about.html" class="">About</a>
+        </li>
+        <li class="footer_nav">
+            <a href="blog.html" class="">Blog</a>
+        </li>
+        <li class="footer_nav">
+            <a href="contact.html" class="">Contact</a>
+        </li>
+    </ul>
+    <h3 class="footer_title">Sincerely, Marie</h3>
+</footer>
+    <div class="copyright"><p>&copy; Copyright 2021 Maria Eilertsen</p></div>
+</main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
