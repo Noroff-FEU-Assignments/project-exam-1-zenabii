@@ -1,0 +1,43 @@
+.alternative_blog {
+  padding-top: 10vh;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  background-color: $solid-green;
+  height: 90vw;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(49, 49, 49, 0.1);
+}
+
+.blog_header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.all_articles {
+  margin: 40px 0 0 0;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article_image {
+  width: 90vw;
+  height: 90vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.hashtag_gategory {
+  margin: 30px 0 0 0;
+}

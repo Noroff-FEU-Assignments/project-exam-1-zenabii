@@ -3,6 +3,7 @@
 @import "menu";
 @import "about";
 @import "contact";
+@import "blog";
 
 body {
   height: 100vh;
@@ -65,11 +66,25 @@ h4 {
     text-align: center;
     padding-top: 30px;
   }
+
+  &.blog {
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
 }
 
 a {
   text-decoration: none;
   color: inherit;
+
+  &.categories {
+    color: $main-grey;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-left: 12px;
+    cursor: pointer;
+  }
 
   &.hashtag_link {
     text-decoration: underline;
