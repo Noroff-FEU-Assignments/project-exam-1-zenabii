@@ -14,6 +14,14 @@
   overflow: hidden;
 }
 
+/* GRID FOR LATEST ARTICLE */
+.latest_topic_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 .hightlight_img {
   height: 80vh;
 }
@@ -369,17 +377,10 @@ hr {
 }
 
 .article {
-  display: -ms-grid;
-  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
-}
-
-.all_articles {
-  margin: 40px 0 0 0;
-  padding: 40px 0px;
+  margin: 25px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +388,15 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.all_articles {
+  margin: 40px 0 0 0;
+  padding: 40px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .article_image {

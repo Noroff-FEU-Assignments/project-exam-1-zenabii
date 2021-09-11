@@ -11,6 +11,12 @@
   overflow: hidden;
 }
 
+/* GRID FOR LATEST ARTICLE */
+.latest_topic_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .hightlight_img {
   height: 80vh;
 }

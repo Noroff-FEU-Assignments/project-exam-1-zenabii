@@ -19,16 +19,17 @@ hr {
 }
 
 .article {
-  display: grid;
   justify-content: center;
-  margin-bottom: 50px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .all_articles {
   margin: 40px 0 0 0;
   padding: 40px 0px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .article_image {
