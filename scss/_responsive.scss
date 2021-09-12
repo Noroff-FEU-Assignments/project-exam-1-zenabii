@@ -1,0 +1,63 @@
+@include media-medium {
+  .contact {
+    height: 35vw;
+  }
+
+  .illustration_intro {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .illustration {
+    display: grid;
+  }
+
+  .all_articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article_image {
+    height: 45vw;
+    width: 45vw;
+  }
+
+  .full_width_img {
+    height: 500px;
+    object-position: bottom;
+  }
+
+  .regular_width_img {
+    width: 70vw;
+    height: 400px;
+  }
+}
+
+/*MIN 1200px*/
+@include media-large {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+      align-content: center;
+      padding-top: 25px;
+
+      &__item {
+        display: inline;
+        padding-right: 1rem;
+      }
+
+      &__link {
+        font-size: 1rem;
+      }
+    }
+  }
+}

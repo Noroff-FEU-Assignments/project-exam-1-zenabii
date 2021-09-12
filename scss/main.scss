@@ -5,6 +5,7 @@
 @import "contact";
 @import "blog";
 @import "blogpost";
+@import "responsive";
 
 body {
   height: 100vh;
@@ -45,8 +46,8 @@ h4 {
 
   &.sign_up_alternative {
     font-size: 4.5rem;
-    margin: 0 20px;
     color: $main-grey;
+    margin: 0;
   }
 
   &.footer_title {
@@ -154,11 +155,12 @@ a {
     color: $font-green;
     width: 90%;
   }
+}
 
-  &.alternative {
-    color: $main-grey;
-    width: 90%;
-  }
+.newsletter_paragraph {
+  padding-top: 30px;
+  width: 95%;
+  color: $main-grey;
 }
 
 header {
@@ -228,4 +230,13 @@ footer {
     background-color: $light-green;
     box-shadow: inset 0px 0px 0px 2px $main-grey;
   }
+}
+
+.newsletter_text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.newsletter_form {
+  width: 90%;
 }
