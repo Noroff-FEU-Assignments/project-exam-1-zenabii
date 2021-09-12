@@ -135,7 +135,7 @@
   .about_us {
     width: 100%;
     padding: 50px 0;
-    margin-left: -50px;
+    margin-left: -30px;
   }
 
   #newsletter_signup {
@@ -144,5 +144,29 @@
 
   .newsletter_text {
     padding-top: 30px;
+  }
+
+  .introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 70px;
+    width: 100%;
+  }
+
+  .illustration_intro {
+    width: 414px;
+  }
+
+  .content {
+    height: 500px;
+    margin: auto;
+    width: 450px;
+  }
+
+  .introduction_reversed {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
