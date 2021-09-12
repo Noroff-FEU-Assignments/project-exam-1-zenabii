@@ -1,4 +1,9 @@
+/*MIN 768px*/
 @include media-medium {
+  .blog_title {
+    font-size: 3rem;
+  }
+
   .contact {
     height: 35vw;
   }
@@ -21,6 +26,10 @@
     width: 45vw;
   }
 
+  .blog_paragraph {
+    width: 70%;
+  }
+
   .full_width_img {
     height: 500px;
     object-position: bottom;
@@ -30,9 +39,19 @@
     width: 70vw;
     height: 400px;
   }
+
+  .about_us {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .grid_content,
+  .grid_content_highlight {
+    width: 80%;
+  }
 }
 
-/*MIN 1200px*/
+/*MIN 1024px*/
 @include media-large {
   .menu-btn {
     visibility: hidden;
@@ -59,5 +78,71 @@
         font-size: 1rem;
       }
     }
+  }
+
+  .latest_topic_grid {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .latest_topic_grid_reverse {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    margin-top: -150px;
+  }
+
+  .grid_content {
+    width: 40%;
+    padding-top: 170px;
+  }
+
+  .alternative_blog {
+    padding-bottom: 20vh;
+  }
+
+  .highlights {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .highlight_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+  }
+
+  .all_articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .article_image {
+    height: 25vw;
+    width: 30vw;
+  }
+
+  .about_us_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portrait {
+    margin-top: -100px;
+    margin-left: -50px;
+  }
+
+  .about_us {
+    width: 100%;
+    padding: 50px 0;
+    margin-left: -50px;
+  }
+
+  #newsletter_signup {
+    margin: 50px 0px 100px;
+  }
+
+  .newsletter_text {
+    padding-top: 30px;
   }
 }
