@@ -633,6 +633,96 @@ hr {
   .regular_width_img {
     height: 500px;
   }
+  .content > h3.about_marie {
+    text-align: left;
+  }
+}
+
+/*MIN 1400px*/
+@media screen and (min-width: 1400px) {
+  .main_logo {
+    height: 45px;
+  }
+  .latest_image {
+    height: 80vh;
+  }
+  .grid_content {
+    width: 30%;
+    padding-top: 340px;
+  }
+  .latest_topic_grid {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .newsletter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 100px 0;
+  }
+  .newsletter_alternative {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 100px 50px;
+  }
+  .about_us_grid {
+    padding: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .about_us {
+    width: 80%;
+  }
+  .portrait {
+    margin-left: 0;
+    margin-top: -150px;
+    padding-bottom: 50px;
+  }
+  .highlight_grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .introduction {
+    max-width: 1100px;
+  }
+  .introduction__reversed {
+    max-width: 1100px;
+  }
+  .latest_topic_grid_reverse {
+    max-width: 1300px;
+    padding-left: 80px;
+  }
+  .all_articles {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .article_image {
+    height: 378px;
+    width: 410px;
+  }
+  .article > h3#latest_title {
+    font-size: 1.4rem;
+  }
+  .contact {
+    height: 20vw;
+  }
+  .blog_header > h1.blog_title {
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+  .full_width_img {
+    height: 60vw;
+  }
+  .regular_width_img {
+    height: 600px;
+  }
+  .blog_paragraph {
+    width: 50%;
+  }
 }
 
 body {
