@@ -9,7 +9,7 @@
   }
 
   .illustration_intro {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
   }
 
@@ -98,7 +98,7 @@
     padding-top: 170px;
   }
 
-  .alternative_blog {
+  .blog_front_header {
     padding-bottom: 20vh;
   }
 
@@ -151,22 +151,23 @@
     grid-template-columns: 1fr 1fr;
     padding-top: 70px;
     width: 100%;
-  }
 
-  .illustration_intro {
-    width: 414px;
+    &__reversed {
+      grid-template-columns: 1fr 1fr;
+      flex-direction: initial;
+    }
   }
 
   .content {
-    height: 500px;
     margin: auto;
     width: 450px;
   }
 
-  .introduction_reversed {
-    grid-template-columns: 1fr 1fr;
-    padding-top: 70px;
-    display: flex;
-    flex-direction: row-reverse;
+  .full_width_img {
+    height: 700px;
+  }
+
+  .regular_width_img {
+    height: 500px;
   }
 }

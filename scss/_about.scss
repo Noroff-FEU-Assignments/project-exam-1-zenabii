@@ -9,6 +9,14 @@
 .introduction {
   margin: 0 auto;
   width: 90%;
+
+  &__reversed {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 .illustration {
