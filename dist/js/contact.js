@@ -13,14 +13,14 @@ function validateForm(event) {
     var pass = true 
     event.preventDefault();
 
-    if (checkLength(Name.value, 0) === true) {
+    if (checkLength(Name.value, 4) === true) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";
         pass = false
     }
 
-    if (checkLength(subject.value, 0) === true) {
+    if (checkLength(subject.value, 14) === true) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
@@ -33,7 +33,7 @@ function validateForm(event) {
         emailError.style.display = "block";
         pass = false
     }
-    if (validateEmail(message.value) === true) {
+    if (checkLength(message.value, 24) === true) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
@@ -46,7 +46,7 @@ function validateForm(event) {
     }
 }
 
-form.addEventListener("#formButton", validateForm);
+form.addEventListener("submit", validateForm);
 
 function checkLength(value, len) {
     if (value.trim().length > len) {
