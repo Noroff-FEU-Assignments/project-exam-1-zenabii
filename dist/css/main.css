@@ -63,7 +63,7 @@
   margin: 50px 0px 200px;
 }
 
-#email {
+#newsletteremail {
   width: 90%;
   margin: 0 auto;
   height: 75px;
@@ -318,10 +318,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../dist/img/background_shape.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .form {
@@ -338,7 +334,7 @@
   margin: 70px auto 0px;
 }
 
-#formInput {
+.formInput {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
