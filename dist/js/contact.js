@@ -5,8 +5,8 @@ const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
-const message = document.querySelector("message");
-const messageError = document.querySelector("messageError");
+const message = document.querySelector("#message");
+const messageError = document.querySelector("#messageError");
 
 
 function validateForm(event) {
@@ -41,12 +41,12 @@ function validateForm(event) {
     }
 
     if (pass === true) {
-        alert("Takk for din melding! Vi svarer alltid innen 48 timer.");
+        alert("Thank you for your message! We usually respond within 48 hours.");
         event.target.reset();
     }
 }
 
-form.addEventListener("submit", validateForm);
+form.addEventListener("#formButton", validateForm);
 
 function checkLength(value, len) {
     if (value.trim().length > len) {

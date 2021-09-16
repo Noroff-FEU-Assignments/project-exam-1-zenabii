@@ -226,7 +226,7 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #f0f2ec;
+  color: #dfb794;
 }
 
 .about_intro {
@@ -365,6 +365,14 @@
 
 h4.sign_up {
   color: #64645f;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2px;
 }
 
 .alternative_blog {

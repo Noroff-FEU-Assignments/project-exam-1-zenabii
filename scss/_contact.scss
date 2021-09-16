@@ -58,3 +58,11 @@
 h4.sign_up {
   color: $main-grey;
 }
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
