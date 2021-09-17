@@ -432,6 +432,22 @@ hr {
 
 .hashtag_gategory {
   margin: 30px 0 0 0;
+  text-decoration: underline;
+  color: #cca490;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding-left: 12px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.hashtag_gategory:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.hashtags_option {
+  margin: 5px 0 30px 0;
 }
 
 .full_width_img {
@@ -841,6 +857,15 @@ h4.blog_title {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a.filter_option {
+  color: #64645f;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 12px;
+  cursor: pointer;
 }
 
 a.categories {
