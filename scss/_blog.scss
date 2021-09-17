@@ -46,6 +46,7 @@ hr {
   padding-left: 12px;
   cursor: pointer;
   width: 100px;
+  display: flex;
 
   &:hover {
     filter: invert(1);
