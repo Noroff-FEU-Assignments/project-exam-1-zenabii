@@ -16,11 +16,13 @@ async function getPosts(url){
         }
         allArticles.innerHTML += `
         <div class="article">
+        <a href="/blog_post.html?id=${posts[i].id}">
         <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="Latest articles" class="article_image">
         <div class="hashtag_gategory">#${post._embedded["wp:term"][0][0].name}</div>
         <h3 class="topic_name" id="latest_title">
         ${post.title.rendered}
         </h3>
+        </a>
         </div>
         `
     }); 
