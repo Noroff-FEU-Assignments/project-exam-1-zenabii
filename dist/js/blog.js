@@ -17,7 +17,7 @@ async function getPosts(url){
         allArticles.innerHTML += `
         <div class="article">
         <a href="blog_post.html?id=${post.id}">
-        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="Latest articles" class="article_image">
+        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="Photo of an article" class="article_image">
         <div class="hashtag_gategory">#${post._embedded["wp:term"][0][0].name}</div>
         <h3 class="topic_name" id="latest_title">
         ${post.title.rendered}
@@ -47,22 +47,28 @@ async function getImage(url){
     const latestPosts = await response.json();
 
     latestContent.innerHTML = `
+    <a href="blog_post.html?id=${latestPosts[0].id}">
         <div class="grid_image">
-            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="Latest post" class="latest_image">
+            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="Photo of most recent post" class="latest_image">
         </div>
+        </a>
         <div class="grid_content">
-                <div class="hashtags">
-                <a href="#" class="hashtag_gategory">#${latestPosts[0]._embedded["wp:term"][0][0].name}</a>
+            <div class="hashtags">
+                <a href="#" class="hashtag_gategory">
+                    #${latestPosts[0]._embedded["wp:term"][0][0].name}
+                </a>
             </div>
             <h1 class="topic_name">
-            ${latestPosts[0].title.rendered}
+                ${latestPosts[0].title.rendered}
             </h1>
-            <p class="lead_paragraph">${latestPosts[0].excerpt.rendered.replace(/(<([^>]+)>)/gi, "")}</p>
+            <p class="lead_paragraph">
+                ${latestPosts[0].excerpt.rendered.replace(/(<([^>]+)>)/gi, "")}</p>
             <div class="hashtags">
-            <img src="img/arrow.svg" alt="read more button" class="arrow">
+                <a href="blog_post.html?id=${latestPosts[0].id}">
+                    <img src="img/arrow.svg" alt="read more button" class="arrow">
+                </a>
             </div>
-        </div>
-    
+        </div>   
     `
 }
 

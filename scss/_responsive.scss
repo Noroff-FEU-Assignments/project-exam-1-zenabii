@@ -23,11 +23,16 @@
 
   .carousel {
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
 
   .article_image {
-    height: 45vw;
-    width: 45vw;
+    height: 30vw;
+    width: 30vw;
+  }
+
+  .alternative_article_image {
+    width: 30vw;
   }
 
   .blog_paragraph {
@@ -127,11 +132,16 @@
 
   .carousel {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
   }
 
   .article_image {
     height: 25vw;
-    width: 30vw;
+    width: 25vw;
+  }
+
+  .alternative_article_image {
+    width: 25vw;
   }
 
   .about_us_grid {
@@ -265,12 +275,15 @@
   }
 
   .carousel {
-    max-width: 1300px;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
   }
 
   .article_image {
     height: 378px;
+    width: 410px;
+  }
+  .alternative_article_image {
     width: 410px;
   }
 
