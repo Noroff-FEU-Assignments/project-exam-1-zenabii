@@ -54,8 +54,12 @@
     margin: 0 auto;
   }
 
-  .grid_content,
+  .latest_topic_grid > .grid_content,
   .grid_content_highlight {
+    width: 80%;
+  }
+
+  .latest_topic_grid_reverse > .grid_content {
     width: 80%;
   }
 
@@ -106,9 +110,14 @@
     margin-top: -150px;
   }
 
-  .grid_content {
+  .latest_topic_grid > .grid_content {
     width: 40%;
     padding-top: 170px;
+  }
+
+  .latest_topic_grid_reverse > .grid_content {
+    width: 40%;
+    padding-top: 370px;
   }
 
   .blog_front_header {
@@ -208,7 +217,12 @@
     height: 700px;
   }
 
-  .grid_content {
+  .latest_topic_grid > .grid_content {
+    width: 30%;
+    padding-top: 340px;
+  }
+
+  .latest_topic_grid_reverse > .grid_content {
     width: 30%;
     padding-top: 340px;
   }
