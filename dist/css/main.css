@@ -550,6 +550,10 @@ hr {
 
 /*MIN 768px*/
 @media screen and (min-width: 768px) {
+  .article > .blog_articles {
+    height: 45vw;
+    width: 45vw;
+  }
   .blog_title {
     font-size: 3rem;
   }

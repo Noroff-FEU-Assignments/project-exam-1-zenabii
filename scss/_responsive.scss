@@ -1,5 +1,10 @@
 /*MIN 768px*/
 @include media-medium {
+  .article > .blog_articles {
+    height: 45vw;
+    width: 45vw;
+  }
+
   .blog_title {
     font-size: 3rem;
   }

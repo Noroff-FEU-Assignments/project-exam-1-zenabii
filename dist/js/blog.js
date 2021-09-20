@@ -17,7 +17,7 @@ async function getPosts(url){
         allArticles.innerHTML += `
         <div class="article">
         <a href="blog_post.html?id=${post.id}">
-        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="Photo of an article" class="article_image">
+        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="Photo of an article" class="article_image blog_articles">
         <div class="hashtag_gategory">#${post._embedded["wp:term"][0][0].name}</div>
         <h3 class="topic_name" id="latest_title">
         ${post.title.rendered}
