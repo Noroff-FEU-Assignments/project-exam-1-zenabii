@@ -7,7 +7,7 @@ async function getPost(url) {
     const response = await fetch(url);
     const product = await response.json();
 
-    document.title = "yo";
+    document.title = `${product.title.rendered}`;
 
 }
 

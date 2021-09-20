@@ -75,3 +75,29 @@
 .portrait {
   margin-top: -200px;
 }
+
+.carousel_item {
+  justify-content: center;
+  margin: 25px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.carousel_slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.carousel_styling {
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-top: 200px;
+}

@@ -22,6 +22,9 @@ async function getPosts(url){
         <h3 class="topic_name" id="latest_title">
         ${post.title.rendered}
         </h3>
+        <div class="hashtags_alternative">    
+            <img src="img/arrow.svg" alt="read more button" class="arrow">
+        </div>
         </a>
         </div>
         `
@@ -37,7 +40,7 @@ readMore.onclick = () => getPosts("https://projectexam.zenabi.no/wp-json/wp/v2/p
 
 
 
-const postUrl = "https://projectexam.zenabi.no/wp-json/wp/v2/posts?_embed&filter[posts_per_page]=1";
+const postUrl = "https://projectexam.zenabi.no/wp-json/wp/v2/posts?_embed&per_page=1";
 
 async function getImage(url){
     const response = await fetch(url);

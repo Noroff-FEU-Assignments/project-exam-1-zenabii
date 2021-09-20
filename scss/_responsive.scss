@@ -21,6 +21,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .carousel {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .article_image {
     height: 45vw;
     width: 45vw;
@@ -118,6 +122,10 @@
   }
 
   .all_articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .carousel {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -256,12 +264,21 @@
     margin: 0 auto;
   }
 
+  .carousel {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
   .article_image {
     height: 378px;
     width: 410px;
   }
 
   .article > h3#latest_title {
+    font-size: 1.4rem;
+  }
+
+  .carousel > h3#latest_title {
     font-size: 1.4rem;
   }
 
