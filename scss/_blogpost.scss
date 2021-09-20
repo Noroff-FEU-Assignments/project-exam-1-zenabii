@@ -1,11 +1,8 @@
-.full_width_img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
+.regular_width_img {
+  margin: 0 auto;
 }
 
-.regular_width_img {
+.regular_width_img img {
   width: 95vw;
   height: 90vw;
   object-fit: cover;
@@ -24,4 +21,20 @@
   padding: 50px 0;
   width: 95%;
   margin: 0 auto;
+  word-wrap: break-word;
+}
+
+.full_width_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.full_width_img {
+  margin: 0;
+}
+
+.aligncenter {
+  margin: 0;
 }

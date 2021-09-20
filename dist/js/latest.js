@@ -29,35 +29,127 @@ async function getImage(url){
 getImage(postUrl);
 
 
+/*SLIDER IN PROGRESS*/
 
-const baseUrl = "https://projectexam.zenabi.no/wp-json/wp/v2/posts?_embed&per_page=3";
-const caoruselContainer = document.querySelector(".carousel")
+const postsApi = `https://projectexam.zenabi.no/wp-json/wp/v2/posts?_embed&per_page=20`;
 
 
-async function getPosts(url){
-    const response = await fetch(url);
-    const posts = await response.json();
-    
-    posts.forEach(function (post)  {
-        caoruselContainer.innerHTML += `
-        <div class="carousel_item">
-            <a href="blog_post.html?id=${post.guid.rendered}">
-            <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="Latest articles" class="article_image">
-            <div class="hashtag_gategory">#${post._embedded["wp:term"][0][0].name}</div>
+async function getSlider(url){
+    const fetchPosts = await fetch(postsApi);
+    const resultPosts = await fetchPosts.json();
+
+
+    const caoruselContainer = document.querySelector(".carousel")
+    const prevButton = document.querySelector("#carousel__button--prev");
+    const nextButton = document.querySelector("#carousel__button--next");
+    function makeCarousel(countPages, LengthCarousel) {
+        caoruselContainer.innerHTML = "";
+        for(let i = countPages; i < LengthCarousel; i++) {
+            caoruselContainer.innerHTML += 
+            `
+            <div class="article">
+            <a href="blog_post.html?id=${resultPosts[i].guid.rendered}">
+            <img src="${resultPosts[i]._embedded['wp:featuredmedia']['0'].source_url}" alt="Latest articles" class="article_image">
+            <div class="hashtag_gategory">#${resultPosts[i]._embedded["wp:term"][0][0].name}</div>
             <h3 class="topic_name" id="latest_title">
-            ${post.title.rendered}
+            ${resultPosts[i].title.rendered}
             </h3>
             <div class="hashtags_alternative">    
                 <img src="img/arrow.svg" alt="read more button" class="arrow">
             </div>
-        </a>
-        </div>
-        `
-    }); 
-}
+            </a>
+            </div>
+            `
+            ;
+            if(`${resultPosts[i]._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url}` === undefined) {
+                continue;
+            }
+        }
+    }
+    
+    /* Buttons for the carousel */
 
-getPosts(baseUrl);
+    prevButton.addEventListener("click", previousCarousel);
+    nextButton.addEventListener("click", nextCarousel);
 
+    function previousCarousel() {
+        if (countPages > 0) {
+            countPages = countPages - 1;
+            lengthCarousel = countPages + widthNumber;
+        }
+        else {
+            countPages = resultPosts.length - widthNumber - 1;
+            lengthCarousel = resultPosts.length -1;
+        }
+
+        makeCarousel(countPages, lengthCarousel);
+        console.log(countPages, lengthCarousel);
+    }
+
+    function nextCarousel() {
+
+        countPages = countPages + 1;
+
+        if (countPages >= resultPosts.length - widthNumber) {
+           countPages = 0
+        };
+
+        lengthCarousel = countPages + widthNumber;
+
+        if(lengthCarousel >= resultPosts.length) {
+            lengthCarousel = resultPosts.length  
+        }
+
+        makeCarousel(countPages, lengthCarousel);
+        console.log(countPages, lengthCarousel);
+    }
+
+    /* Check window width for amount of images loaded */
+
+    var checkScreenWidth = window.innerWidth;
+    function checkWidthScreen(checkScreenWidth) {
+        if (checkScreenWidth >= 1100) {
+            widthNumber = 3;
+            countPages = 0;
+            makeCarousel(countPages, widthNumber);
+        }
+        else if (checkScreenWidth > 700 && checkScreenWidth < 1100) {
+            widthNumber = 2;
+            countPages = 0;
+            makeCarousel(countPages, widthNumber);
+        }
+        else if (checkScreenWidth > 550 && checkScreenWidth <= 700) {
+            widthNumber = 1;
+            countPages = 0;
+            makeCarousel(countPages, widthNumber);
+        }
+        else {
+            widthNumber = 1;
+            countPages = 0;
+            makeCarousel(countPages, widthNumber);
+        }
+    }
+
+    checkWidthScreen(checkScreenWidth);
+
+    var countPages = 0;
+    var widthNumber;
+    var lengthCarousel = widthNumber;
+
+    window.addEventListener("resize", checkChangesScreen);
+
+    function checkChangesScreen() {
+        widthOutput = window.innerWidth;
+        checkWidthScreen(widthOutput)
+    };
+};
+
+
+getSlider(postsApi);
+
+
+
+/*HIGHLIGH POSTS*/
 
 const highlightUrl = "https://projectexam.zenabi.no/wp-json/wp/v2/posts?_embed&categories=5";
 const highlightContainer = document.querySelector(".highlight_grid")
@@ -95,3 +187,5 @@ async function getHighlight(url){
 }
 
 getHighlight (highlightUrl);
+
+

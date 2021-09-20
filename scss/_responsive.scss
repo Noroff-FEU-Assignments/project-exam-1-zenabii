@@ -39,7 +39,7 @@
     object-position: bottom;
   }
 
-  .regular_width_img {
+  .regular_width_img img {
     width: 70vw;
     height: 400px;
   }
@@ -179,7 +179,7 @@
     height: 700px;
   }
 
-  .regular_width_img {
+  .regular_width_img img {
     height: 500px;
   }
 
@@ -294,9 +294,10 @@
 
   .full_width_img {
     height: 900px;
+    margin: 0;
   }
 
-  .regular_width_img {
+  .regular_width_img img {
     height: 600px;
     width: 900px;
   }
