@@ -12,23 +12,48 @@ async function getPost(url) {
     document.title = `${post.title.rendered}`;
     blogTitle.innerHTML = post.title.rendered;
     articlePage.innerHTML = post.content.rendered;
+
+    const modal = document.querySelector(".modal");
+    const previews = document.querySelectorAll(".article_page img");
+    const original = document.querySelector(".full_img");
+
+    previews.forEach(preview => {
+        preview.addEventListener("click", () => {
+            modal.classList.add("open");
+            original.classList.add("open");
+        })
+    })
+
+    modal.addEventListener(`click`, (e) => {
+        if(e.target.classList(`modal`)) {
+            modal.classList.remove(`open`);
+        }
+    })
     
 
 
 }
+
+
 
 getPost(url);
 
 
 /* MODAL SCRIPT */
 
-const modal = document.querySelector(".modal");
-const previews = document.querySelectorAll(".article_page img");
-const original = document.querySelector(".full_img");
+// const modal = document.querySelector(".modal");
+// const previews = document.querySelectorAll(".article_page img");
+// const original = document.querySelector(".full_img");
 
-previews.forEach(preview => {
-    preview.addEventListener(`click`, () => {
-        modal.classList.add("open");
-        console.log(preview);
-    })
-})
+// previews.forEach(preview => {
+//     preview.addEventListener("click", () => {
+//         modal.classList.add("open");
+//         original.classList.add("open");
+//     })
+// })
+
+// modal.addEventListener(`click`, (e) => {
+//     if(e.target.classList(`modal`)) {
+//         modal.classList.remove(`open`);
+//     }
+// })
