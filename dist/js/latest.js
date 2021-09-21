@@ -16,7 +16,7 @@ async function getImage(url){
     </a>
         <div class="grid_content">
             <div class="hashtags">
-                <a href="#" class="hashtag_gategory">#${latestPosts[0]._embedded["wp:term"][0][0].name}</a>
+                <a class="hashtag_gategory">#${latestPosts[0]._embedded["wp:term"][0][0].name}</a>
             </div>
             <h1 class="topic_name">
                 ${latestPosts[0].title.rendered}
@@ -172,7 +172,7 @@ async function getHighlight(url){
             </div>
             <div class="grid_content_highlight">
                 <div class="hashtags">
-                    <a href="#" class="hashtag_link">#${post._embedded["wp:term"][0][0].name}</a>
+                    <a class="hashtag_link">#${post._embedded["wp:term"][0][0].name}</a>
                 </div>
                 <h1 class="topic_name">
                     ${post.title.rendered}

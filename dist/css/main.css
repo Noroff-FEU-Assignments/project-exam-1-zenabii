@@ -552,16 +552,10 @@ hr {
   font-size: 0.8rem;
   text-transform: uppercase;
   padding-left: 12px;
-  cursor: pointer;
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.hashtag_gategory:hover {
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 .hashtags_option {
@@ -1190,12 +1184,6 @@ a.hashtag_link {
   font-size: 0.8rem;
   text-transform: uppercase;
   padding-left: 12px;
-  cursor: pointer;
-}
-
-a.hashtag_link:hover {
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 .arrow {

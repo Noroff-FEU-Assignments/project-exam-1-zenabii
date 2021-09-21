@@ -54,7 +54,7 @@ async function getImage(url){
         </a>
         <div class="grid_content">
             <div class="hashtags">
-                <a href="#" class="hashtag_gategory">
+                <a class="hashtag_gategory">
                     #${latestPosts[0]._embedded["wp:term"][0][0].name}
                 </a>
             </div>
