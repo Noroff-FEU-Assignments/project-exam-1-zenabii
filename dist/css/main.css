@@ -558,7 +558,6 @@ figure > img:hover {
   transition: all 0.5s ease-in-out;
 }
 
-/*MODAL STYLING*/
 /* Modal container */
 .modal__section {
   position: fixed;
@@ -584,12 +583,6 @@ figure > img:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 85%;
-  height: 70%;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: var(--defaultradius);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -598,13 +591,16 @@ figure > img:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 98%;
-  height: 98%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  width: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .modal-exit {

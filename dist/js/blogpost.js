@@ -24,7 +24,7 @@ async function getPost(url) {
 
     function displayModal(event) {
         modalSection.style.display = "flex";
-        modalImg.innerHTML = `<div class="modal-image" src="${post._embedded['wp:featuredmedia']['0'].source_url}"></div>`
+        modalImg.innerHTML = `<img src="${event.target.src}" class="modal-image">`
     }
 
     modalExit.addEventListener("click", () => {
