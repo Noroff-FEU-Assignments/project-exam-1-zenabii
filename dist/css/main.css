@@ -149,6 +149,43 @@
   border: solid 2px #959c7d;
 }
 
+/*PSUEDO*/
+.highlights::before,
+.highlights::after {
+  content: "";
+  opacity: 1;
+  -webkit-transition: -webkit-transform ease-out 250ms;
+  transition: -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms;
+  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.highlights::before {
+  width: 100%;
+  border-top: 3px solid #cca490;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  margin-bottom: 10px;
+}
+
+.highlights::after {
+  width: 100%;
+  border-top: 3px solid #cca490;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.highlights:hover::before,
+.highlights:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+/**/
 .menu-btn {
   position: absolute;
   z-index: 1;
