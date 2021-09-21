@@ -25,8 +25,14 @@
   object-position: bottom;
 }
 
+.hightlight_img:hover {
+  transform: scale(1.02);
+  @include transition-ease;
+}
+
 .highlights {
   margin-top: 70px;
+  overflow: hidden;
 }
 
 .latest_posts {
@@ -109,34 +115,3 @@
   color: $font-green;
   border: solid 2px $font-green;
 }
-
-/*PSUEDO*/
-
-.highlights::before,
-.highlights::after {
-  content: "";
-  opacity: 1;
-  transition: transform ease-out 250ms;
-}
-
-.highlights::before {
-  width: 100%;
-  border-top: 3px solid $hashtag-link;
-  transform: scale(0, 1);
-  transform-origin: right;
-  margin-bottom: 10px;
-}
-
-.highlights::after {
-  width: 100%;
-  border-top: 3px solid $hashtag-link;
-  transform: scale(0, 1);
-  transform-origin: left;
-}
-
-.highlights:hover::before,
-.highlights:hover::after {
-  transform: scale(1, 1);
-}
-
-/**/
