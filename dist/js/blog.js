@@ -78,7 +78,7 @@ const search = document.querySelector(".search-button");
 
 search.onclick = function () {
     const searchInput = document.querySelector("#search-input").value;
-    const newUrl = baseUrl + `?search=${searchInput}`;
+    const newUrl = baseUrl + `&search=${searchInput}`;
     allArticles.innerHTML = "";
     getPosts(newUrl);
     console.log("heelu");
