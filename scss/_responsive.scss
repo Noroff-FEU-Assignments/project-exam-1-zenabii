@@ -36,6 +36,11 @@
     width: 30vw;
   }
 
+  .all_article_images {
+    height: 45vw;
+    width: 45vw;
+  }
+
   .alternative_article_image {
     width: 30vw;
   }
@@ -71,10 +76,23 @@
   .hightlight_img {
     height: 700px;
   }
+
+  .newsletter_container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 /*MIN 1024px*/
 @include media-large {
+  .newsletter_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 1000px;
+  }
+
   .menu-btn {
     visibility: hidden;
   }
@@ -154,6 +172,11 @@
     width: 25vw;
   }
 
+  .all_article_images {
+    height: 30vw;
+    width: 30vw;
+  }
+
   .alternative_article_image {
     width: 25vw;
   }
@@ -175,11 +198,7 @@
   }
 
   #newsletter_signup {
-    margin: 50px 0px 100px;
-  }
-
-  .newsletter_text {
-    padding-top: 30px;
+    margin: 50px 0px 0px;
   }
 
   .introduction {
@@ -222,6 +241,10 @@
     height: 700px;
   }
 
+  .newsletter_text {
+    padding-top: 30px;
+  }
+
   .latest_topic_grid > .grid_content {
     width: 30%;
     padding-top: 340px;
@@ -243,13 +266,11 @@
 
   .newsletter {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 100px 0;
   }
 
   .newsletter_alternative {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 100px 50px;
   }
 
@@ -298,12 +319,10 @@
     margin: 0 auto;
   }
 
-  .article_image {
-    height: 378px;
-    width: 410px;
-  }
+  .all_article_images,
   .alternative_article_image {
     width: 410px;
+    height: 378px;
   }
 
   .article > h3#latest_title {
@@ -336,5 +355,19 @@
 
   .blog_paragraph {
     width: 50%;
+  }
+
+  .newsletter_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 1400px;
+  }
+
+  .alternative_container {
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
   }
 }

@@ -22,6 +22,7 @@ hr {
   margin: 25px 15px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .all_articles {
@@ -30,6 +31,14 @@ hr {
 }
 
 .article_image {
+  width: 90vw;
+  height: 90vw;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: bottom;
+}
+
+.all_article_images {
   width: 90vw;
   height: 90vw;
   object-fit: cover;

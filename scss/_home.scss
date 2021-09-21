@@ -45,12 +45,13 @@
 
 .newsletter {
   background-color: $main-green;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 #newsletter_signup {
   display: flex;
   margin: 50px 0px 200px;
+  flex-direction: column;
 }
 
 #newsletteremail {
