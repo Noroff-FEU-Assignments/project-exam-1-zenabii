@@ -18,3 +18,17 @@ async function getPost(url) {
 }
 
 getPost(url);
+
+
+/* MODAL SCRIPT */
+
+const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".article_page img");
+const original = document.querySelector(".full_img");
+
+previews.forEach(preview => {
+    preview.addEventListener(`click`, () => {
+        modal.classList.add("open");
+        console.log(preview);
+    })
+})

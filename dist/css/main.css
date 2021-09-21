@@ -500,6 +500,7 @@ hr {
 
 .regular_width_img {
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .regular_width_img img {
@@ -542,10 +543,49 @@ hr {
 
 .full_width_img {
   margin: 0;
+  overflow: hidden;
 }
 
 .aligncenter {
   margin: 0;
+}
+
+figure > img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*MODAL STYLING*/
+.modal {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.full_img.open {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /*MIN 768px*/
