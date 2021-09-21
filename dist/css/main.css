@@ -418,10 +418,11 @@ h4.sign_up {
 
 .form-error {
   display: none;
-  color: red;
+  color: #dfb794;
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 2px;
+  width: 350px;
 }
 
 .alternative_blog {
