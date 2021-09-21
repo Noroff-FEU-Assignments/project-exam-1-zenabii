@@ -51,7 +51,7 @@ h4 {
   }
 
   &.footer_title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   &.about_marie {
@@ -103,11 +103,7 @@ a {
   }
   &.date {
     color: $main-grey;
-    font-size: 0.7rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-left: 12px;
-    cursor: pointer;
+    font-size: 1rem;
   }
 
   &.hashtag_link {

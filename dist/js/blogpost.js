@@ -3,6 +3,8 @@ const postId = params.get("id");
 const url = "https://projectexam.zenabi.no/wp-json/wp/v2/posts/" + postId + "?_embed";
 const blogTitle = document.querySelector(".blog_title");
 const articlePage = document.querySelector(".article_page");
+const articleDate = document.querySelector(".date");
+const articleAuthor = document.querySelector(".author");
 
 
 async function getPost(url) {
@@ -12,6 +14,8 @@ async function getPost(url) {
     document.title = `${post.title.rendered}`;
     blogTitle.innerHTML = post.title.rendered;
     articlePage.innerHTML = post.content.rendered;
+    articleDate.innerHTML = post.date.slice(0, 10);
+    articleAuthor.innerHTML = post._embedded['author']['0'].name;
     
     const modalSection = document.querySelector(".modal__section");
     const articleImage = document.querySelectorAll(".modal");
@@ -40,6 +44,7 @@ async function getPost(url) {
         }
     }
 
+    
 
 }
 

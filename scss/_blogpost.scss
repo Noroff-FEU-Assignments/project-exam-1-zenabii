@@ -48,8 +48,17 @@ figure > img:hover {
   @include transition-ease;
 }
 
-// .modal {
-// }
+.author_container {
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.author {
+  font-weight: bold;
+  color: $font-green;
+}
 
 /* Modal container */
 

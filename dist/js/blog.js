@@ -10,7 +10,7 @@ async function getPosts(url){
     const response = await fetch(url);
     const posts = await response.json();
     
-    posts.forEach(function (post, index)  {
+    posts.forEach(function (post, index,)  {
         if (index == 0) {
             return;
         }
@@ -75,11 +75,3 @@ async function getImage(url){
 getImage(postUrl);
 
 const search = document.querySelector(".search-button");
-
-search.onclick = function () {
-    const searchInput = document.querySelector("#search-input").value;
-    const newUrl = baseUrl + `&search=${searchInput}`;
-    allArticles.innerHTML = "";
-    getPosts(newUrl);
-    console.log("heelu");
-}
