@@ -49,28 +49,87 @@ figure > img:hover {
 
 /*MODAL STYLING*/
 
+// .modal {
+//   background: rgba(0, 0, 0, 0.6);
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+// .modal.open {
+//   opacity: 1;
+//   pointer-events: all;
+//   @include transition-ease;
+// }
+
+// .full_img.open {
+//   transform: translate(-50%, -50%) scale(1);
+//   position: absolute;
+//   height: 70%;
+//   top: 50%;
+//   left: 50%;
+//   z-index: 1;
+//   @include transition-ease;
+// }
+
 .modal {
-  background: rgba(0, 0, 0, 0.6);
+  // width: 400px;
+  // max-width: 100%;
+  // height: 250px;
+  // background-position: center;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // border-radius: var(--defaultradius);
+  // margin: 0 auto;
+  // cursor: pointer;
+}
+
+/* Modal container */
+
+.modal__section {
   position: fixed;
-  top: 0;
-  left: 0;
+  display: none;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal.open {
-  opacity: 1;
-  pointer-events: all;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: space-around;
   @include transition-ease;
 }
 
-.full_img.open {
-  transform: translate(-50%, -50%) scale(1);
-  position: absolute;
-  height: 70%;
+.modal__image-container {
+  position: fixed;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 70%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: var(--defaultradius);
   @include transition-ease;
+}
+
+.modal-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%;
+  height: 98%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.modal-exit {
+  display: none;
 }

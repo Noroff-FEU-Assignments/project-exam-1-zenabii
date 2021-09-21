@@ -12,24 +12,33 @@ async function getPost(url) {
     document.title = `${post.title.rendered}`;
     blogTitle.innerHTML = post.title.rendered;
     articlePage.innerHTML = post.content.rendered;
-
-    const modal = document.querySelector(".modal");
-    const previews = document.querySelectorAll(".article_page img");
-    const original = document.querySelector(".full_img");
-
-    previews.forEach(preview => {
-        preview.addEventListener("click", () => {
-            modal.classList.add("open");
-            original.classList.add("open");
-        })
-    })
-
-    modal.addEventListener(`click`, (e) => {
-        if(e.target.classList(`modal`)) {
-            modal.classList.remove(`open`);
-        }
-    })
     
+    const modalSection = document.querySelector(".modal__section");
+    const articleImage = document.querySelectorAll(".modal");
+    const modalImg = document.querySelector(".modal__image-container");
+    const modalExit = document.querySelector(".modal-exit");
+
+    articleImage.forEach(function(imagesDoes) {
+            imagesDoes.addEventListener("click", displayModal)
+    });
+
+    function displayModal(event) {
+        modalSection.style.display = "flex";
+        modalImg.innerHTML = `<div class="modal-image" src="${post._embedded['wp:featuredmedia']['0'].source_url}"></div>`
+    }
+
+    modalExit.addEventListener("click", () => {
+        modalSectionExit.style.display = "none";
+        modalImg.innerHTML = "";
+    });
+
+    window.addEventListener("click", closeModalWindow);
+
+    function closeModalWindow(classClick) {
+        if(classClick.target === modalSection) {
+            modalSection.style.display = "none";
+        }
+    }
 
 
 }
@@ -37,23 +46,3 @@ async function getPost(url) {
 
 
 getPost(url);
-
-
-/* MODAL SCRIPT */
-
-// const modal = document.querySelector(".modal");
-// const previews = document.querySelectorAll(".article_page img");
-// const original = document.querySelector(".full_img");
-
-// previews.forEach(preview => {
-//     preview.addEventListener("click", () => {
-//         modal.classList.add("open");
-//         original.classList.add("open");
-//     })
-// })
-
-// modal.addEventListener(`click`, (e) => {
-//     if(e.target.classList(`modal`)) {
-//         modal.classList.remove(`open`);
-//     }
-// })
