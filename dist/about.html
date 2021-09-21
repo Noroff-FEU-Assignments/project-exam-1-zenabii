@@ -69,9 +69,13 @@
             <p class="newsletter_paragraph">Receive news, new posts, and all the new trends straight to your inbox.</p>
         </div>
         <div class="newsletter_form">
-            <label id="newsletter_signup">
-                <input email="email" id="newsletteremail" placeholder="Enter Email">
-            </label>
+            <form id="confirmation_container">
+                <label id="labelForm">
+                    <input email="email" id="newsletteremail" placeholder="Email">
+                    <div class="form-error" id="emailError">Must be valid email address</div>
+                    <button id="formButton">submit</button>
+                </label>
+            </form>
         </div>
     </div>
 </div>

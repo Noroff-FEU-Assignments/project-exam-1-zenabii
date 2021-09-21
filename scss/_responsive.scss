@@ -5,6 +5,11 @@
     width: 45vw;
   }
 
+  .alternative_container {
+    width: 700px;
+    margin: 0 auto;
+  }
+
   .blog_title {
     font-size: 3rem;
   }
@@ -91,6 +96,16 @@
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     width: 1000px;
+  }
+
+  .newsletter_form {
+    padding-top: 60px;
+  }
+
+  .alternative_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
   }
 
   .menu-btn {
@@ -239,6 +254,14 @@
 
   .latest_image {
     height: 700px;
+  }
+
+  .newsletter_form {
+    padding-top: 0;
+  }
+
+  #confirmation_container {
+    padding-top: 50px;
   }
 
   .newsletter_text {

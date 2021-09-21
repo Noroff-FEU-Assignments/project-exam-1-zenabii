@@ -23,6 +23,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .all_articles {
@@ -44,6 +45,11 @@ hr {
   object-fit: cover;
   overflow: hidden;
   object-position: bottom;
+}
+
+.all_article_images:hover {
+  transform: scale(1.02);
+  @include transition-ease;
 }
 
 .alternative_article_image {
