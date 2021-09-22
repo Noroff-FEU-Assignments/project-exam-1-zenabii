@@ -1255,6 +1255,8 @@ main {
   width: 210px;
   display: block;
   height: 100%;
+  z-index: 3;
+  position: relative;
 }
 
 footer {
