@@ -1340,4 +1340,27 @@ footer {
 .grid_content {
   width: 320px;
 }
+
+.back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0px 10px 0px;
+}
+
+.back-to-top i {
+  font-size: 2rem;
+  color: #959c7d;
+}
+
+.back-to-top i:hover {
+  color: #dfb794;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 /*# sourceMappingURL=main.css.map */

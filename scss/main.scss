@@ -259,3 +259,22 @@ footer {
 .grid_content {
   width: 320px;
 }
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 10px 0px;
+}
+
+.back-to-top i {
+  font-size: 2rem;
+  color: $font-green;
+}
+
+.back-to-top i:hover {
+  color: $coral;
+}
+
+html {
+  scroll-behavior: smooth;
+}
