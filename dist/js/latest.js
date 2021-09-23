@@ -23,6 +23,7 @@ async function getImage(url){
             </h1>
             <p class="lead_paragraph">${latestPosts[0].excerpt.rendered.replace(/(<([^>]+)>)/gi, "")}</p>
             <div class="hashtags">
+            <a href="blog_post.html?id=${latestPosts[0].id}" class="hashtag_link">READ MORE</a> 
                 <a href="blog_post.html?id=${latestPosts[0].id}">
                     <img src="img/arrow.svg" alt="read more button" class="arrow">
                 </a>
@@ -172,14 +173,15 @@ async function getHighlight(url){
             </div>
             <div class="grid_content_highlight">
                 <div class="hashtags">
-                    <a class="hashtag_link">#${post._embedded["wp:term"][0][0].name}</a>
+                    <a class="hashtag_gategory">#${post._embedded["wp:term"][0][0].name}</a>
                 </div>
                 <h1 class="topic_name">
                     ${post.title.rendered}
                 </h1>
                 <p class="lead_paragraph">${posts[0].excerpt.rendered.replace(/(<([^>]+)>)/gi, "")}</p>
                     <div class="hashtags">
-                        <a href="blog_post.html?id=${post.id}">    
+                        <a href="blog_post.html?id=${post.id}" class="hashtag_link">READ MORE</a>    
+                        <a href="blog_post.html?id=${post.id}">
                         <img src="img/arrow.svg" alt="read more button" class="arrow">
                         </a>
                     </div>

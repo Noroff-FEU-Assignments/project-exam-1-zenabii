@@ -113,6 +113,10 @@ a {
     text-transform: uppercase;
     padding-left: 12px;
   }
+
+  &.hashtag_link:hover {
+    filter: invert(1);
+  }
 }
 
 .arrow {
@@ -161,7 +165,11 @@ header {
   background-color: #fff;
 
   &.alternative {
-    background-color: transparent;
+    background-color: $solid-green;
+  }
+
+  &.contact_header {
+    background-color: $contact-pink;
   }
 }
 

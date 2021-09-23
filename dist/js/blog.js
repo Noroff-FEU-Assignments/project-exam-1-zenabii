@@ -64,6 +64,7 @@ async function getImage(url){
             <p class="lead_paragraph">
                 ${latestPosts[0].excerpt.rendered.replace(/(<([^>]+)>)/gi, "")}</p>
             <div class="hashtags">
+            <a href="blog_post.html?id=${latestPosts[0].id}" class="hashtag_link">READ MORE</a> 
                 <a href="blog_post.html?id=${latestPosts[0].id}">
                     <img src="img/arrow.svg" alt="read more button" class="arrow">
                 </a>

@@ -18,7 +18,6 @@ function validateForm(event) {
         alert("Thank you for signing up to our newsletter!");
         event.target.reset();
     }
-    console.log(validateForm);
 }
 
 form.addEventListener("submit", validateForm);
