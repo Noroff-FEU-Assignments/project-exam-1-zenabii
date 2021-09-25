@@ -139,7 +139,7 @@
 
 .carousel_styling {
   height: 40px;
-  background-color: #959c7d;
+  background-color: #7c8369;
   color: #f8f8f2;
   width: 40px;
   margin: 0 auto;
@@ -154,8 +154,8 @@
 
 .carousel_styling:hover {
   background-color: #f8f8f2;
-  color: #959c7d;
-  border: solid 2px #959c7d;
+  color: #7c8369;
+  border: solid 2px #7c8369;
 }
 
 .menu-btn {
@@ -265,7 +265,7 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #959c7d;
+  color: #7c8369;
 }
 
 .nav .menu-nav__link {
@@ -634,7 +634,7 @@ figure > img:hover {
 
 .author {
   font-weight: bold;
-  color: #959c7d;
+  color: #7c8369;
 }
 
 /* Modal container */
@@ -1096,7 +1096,7 @@ h3.sign_up,
 h4.sign_up {
   font-size: 4.5rem;
   margin: 0;
-  color: #959c7d;
+  color: #7c8369;
 }
 
 h1.sign_up_alternative,
@@ -1228,7 +1228,7 @@ a.hashtag_link:hover {
 }
 
 .green_newsletter_paragraph {
-  color: #959c7d;
+  color: #7c8369;
 }
 
 header {
@@ -1362,7 +1362,7 @@ footer {
 
 .back-to-top i {
   font-size: 2rem;
-  color: #959c7d;
+  color: #7c8369;
 }
 
 .back-to-top i:hover {

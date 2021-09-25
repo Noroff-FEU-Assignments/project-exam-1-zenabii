@@ -11,7 +11,7 @@ async function getImage(url){
     latestContent.innerHTML = `
     <a href="blog_post.html?id=${latestPosts[0].id}">
         <div class="grid_image">
-            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="Photo of most recent article" class="latest_image">
+            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="${latestPosts[0].excerpt.rendered.replace(/(<([^>]+)>)/gi, "")}" class="latest_image">
         </div>
     </a>
         <div class="grid_content">
