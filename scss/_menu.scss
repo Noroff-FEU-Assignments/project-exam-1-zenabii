@@ -85,6 +85,7 @@
 
     &__item.active > a {
       color: $font-green;
+      font-weight: 700;
     }
 
     &__link {
@@ -94,6 +95,7 @@
 
       &:hover {
         color: $coral;
+        font-weight: 600;
       }
     }
   }

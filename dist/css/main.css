@@ -266,6 +266,7 @@
 
 .nav .menu-nav__item.active > a {
   color: #7c8369;
+  font-weight: 700;
 }
 
 .nav .menu-nav__link {
@@ -277,6 +278,7 @@
 
 .nav .menu-nav__link:hover {
   color: #dfb794;
+  font-weight: 600;
 }
 
 .about_intro {
@@ -807,6 +809,7 @@ figure > img:hover {
   }
   .nav .menu-nav__link {
     font-size: 1rem;
+    font-weight: 500;
   }
   .latest_topic_grid {
     display: -webkit-box;
