@@ -88,7 +88,6 @@ async function getSlider(url){
         }
 
         makeCarousel(countPages, lengthCarousel);
-        console.log(countPages, lengthCarousel);
     }
 
     function nextCarousel() {
@@ -106,7 +105,6 @@ async function getSlider(url){
         }
 
         makeCarousel(countPages, lengthCarousel);
-        console.log(countPages, lengthCarousel);
     }
 
     var checkScreenWidth = window.innerWidth;
@@ -150,7 +148,6 @@ async function getSlider(url){
 
 getSlider(postsApi);
 
-/* SLIDER ENDS */
 
 
 /*HIGHLIGH POSTS*/
