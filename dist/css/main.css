@@ -265,7 +265,6 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #7c8369;
   font-weight: 700;
 }
 
@@ -1224,6 +1223,7 @@ a.hashtag_link:hover {
   width: 95%;
   margin: 0 auto;
   word-wrap: break-word;
+  line-height: 1.5;
 }
 
 .newsletter_paragraph {
