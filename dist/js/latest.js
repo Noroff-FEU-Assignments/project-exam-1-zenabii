@@ -11,7 +11,7 @@ async function getImage(url){
     latestContent.innerHTML = `
     <a href="blog_post.html?id=${latestPosts[0].id}">
         <div class="grid_image">
-            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="${latestPosts[0].excerpt.rendered.replace(/(<([^>]+)>)/gi, "")}" class="latest_image">
+            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="${latestPosts[0]._embedded['wp:featuredmedia']['0'].alt_text}" class="latest_image">
         </div>
     </a>
         <div class="grid_content">
@@ -56,7 +56,7 @@ async function getSlider(url){
             `
             <div class="article">
             <a href="blog_post.html?id=${resultPosts[i].id}" class="caorusel_link">
-            <img src="${resultPosts[i]._embedded['wp:featuredmedia']['0'].source_url}" class="article_image alternative_article_image" alt="Photo of an article">
+            <img src="${resultPosts[i]._embedded['wp:featuredmedia']['0'].source_url}" class="article_image alternative_article_image" alt="${resultPosts[i]._embedded['wp:featuredmedia']['0'].alt_text}">
             <div class="hashtag_gategory">#${resultPosts[i]._embedded["wp:term"][0][0].name}</div>
             <h3 class="topic_name" id="latest_title">
             ${resultPosts[i].title.rendered}
@@ -166,7 +166,7 @@ async function getHighlight(url){
         <div class="highlights">
         <a href="blog_post.html?id=${post.id}">
             <div class="grid_image_highlight">
-                <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" class="hightlight_img" alt="Photo of an article">
+                <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" class="hightlight_img" alt="${posts[0]._embedded['wp:featuredmedia']['0'].alt_text}">
             </div>
             <div class="grid_content_highlight">
                 <div class="hashtags">

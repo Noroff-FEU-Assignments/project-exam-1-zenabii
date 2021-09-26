@@ -17,7 +17,7 @@ async function getPosts(url){
         allArticles.innerHTML += `
         <div class="article">
         <a href="blog_post.html?id=${post.id}">
-        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="Photo of an article" class="all_article_images">
+        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="${post._embedded['wp:featuredmedia']['0'].alt_text}" class="all_article_images">
         <div class="hashtag_gategory">#${post._embedded["wp:term"][0][0].name}</div>
         <h3 class="topic_name" id="latest_title">
         ${post.title.rendered}
@@ -49,7 +49,7 @@ async function getImage(url){
     latestContent.innerHTML = `
     <a href="blog_post.html?id=${latestPosts[0].id}">
         <div class="grid_image">
-            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="Photo of most recent post" class="latest_image">
+            <img src="${latestPosts[0]._embedded['wp:featuredmedia']['0'].source_url}" alt="${latestPosts[0]._embedded['wp:featuredmedia']['0'].alt_text}" class="latest_image">
         </div>
         </a>
         <div class="grid_content">
