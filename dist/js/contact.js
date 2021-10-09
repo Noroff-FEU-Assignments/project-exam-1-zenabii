@@ -8,7 +8,6 @@ const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
-
 function validateForm(event) {
     var pass = true 
     event.preventDefault();
@@ -53,7 +52,6 @@ function submitData() {
         body: new FormData(form)
     })
 }
-
 
 form.addEventListener("submit", validateForm);
 

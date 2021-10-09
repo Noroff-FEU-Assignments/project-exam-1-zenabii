@@ -35,11 +35,7 @@ async function getImage(url){
 
 getImage(postUrl);
 
-
-/*CAROUSEL*/
-
 const postsApi = `https://projectexam.zenabi.no/wp-json/wp/v2/posts?_embed&per_page=20`;
-
 
 async function getSlider(url){
     const fetchPosts = await fetch(postsApi);
@@ -148,9 +144,6 @@ async function getSlider(url){
 
 getSlider(postsApi);
 
-
-
-/*HIGHLIGH POSTS*/
 
 const highlightUrl = "https://projectexam.zenabi.no/wp-json/wp/v2/posts?_embed&categories=5";
 const highlightContainer = document.querySelector(".highlight_grid")
