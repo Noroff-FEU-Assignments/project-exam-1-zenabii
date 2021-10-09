@@ -42,9 +42,18 @@ function validateForm(event) {
 
     if (pass === true) {
         alert("Thank you for your message! We usually respond within 48 hours.");
+        submitData();
         event.target.reset();
     }
 }
+
+function submitData() {
+    fetch ("https://projectexam.zenabi.no/wp-json/contact-form-7/v1/contact-forms/5/feedback", {
+        method: "POST",
+        body: new FormData(form)
+    })
+}
+
 
 form.addEventListener("submit", validateForm);
 
