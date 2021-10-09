@@ -16,11 +16,19 @@ function validateForm(event) {
 
     if (pass === true) {
         alert("Thank you for signing up to our newsletter!");
+        submitData();
         event.target.reset();
     }
 }
 
 form.addEventListener("submit", validateForm);
+
+function submitData() {
+    fetch ("https://projectexam.zenabi.no/wp-json/contact-form-7/v1/contact-forms/166/feedback", {
+        method: "POST",
+        body: new FormData(form)
+    })
+}
 
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
